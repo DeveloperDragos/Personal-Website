@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>Dragos's Personal Page</title>
+  </head>
+  <body>
+    <div class="container-home" id="home">
+      <video class="background-video" autoplay loop muted plays-inline>
+        <source src="img/video.mp4" type="video/mp4" />
+      </video>
+      <nav class="nav-bar">
+        <div class="nav-bar__logo">D</div>
+        <ul class="nav-bar__menu" id="sideMenu">
+          <li class="nav-bar__menu--item"><a href="#home">Home</a></li>
+          <li class="nav-bar__menu--item"><a href="#skills">Skills</a></li>
+          <li class="nav-bar__menu--item"><a href="#projects">Projects</a></li>
+          <li class="nav-bar__menu--item">
+            <a href="#contactMe">Contact me</a>
+          </li>
+          <i class="fas fa-solid fa-xmark" onclick="closeMenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openMenu()"></i>
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h6>Front-End Web Developer</h6>
+          <h1>hi, I'm <span class="header__content--name">Dragos</span></h1>
+          <div class="wrapper">
+            <p>I build</p>
+            <div class="words">
+              <span>dreams</span>
+              <span>sites</span>
+              <span>apps</span>
+              <span>dreams</span>
+              <span>apps</span>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <section class="skills" id="skills">
+      <h2>Skills</h2>
+      <div class="skills__grid">
+        <div class="skills__grid--item" title="html5">
+          <img src="img/img-html5.png" alt="html5 image" class="img" />
+        </div>
+        <div class="skills__grid--item" title="css">
+          <img src="img/img-css.png" alt="css image" class="img" />
+        </div>
+        <div class="skills__grid--item" title="JavaScript">
+          <img
+            src="img/img-javascript.png"
+            alt="javascript image"
+            class="img"
+          />
+        </div>
+        <div class="skills__grid--item" title="TypeScript">
+          <img
+            src="img/img-typescript.png"
+            alt="typescript image"
+            class="img"
+          />
+        </div>
+        <div class="skills__grid--item" title="Git">
+          <img src="img/img-git.png" alt="image git" class="img" />
+        </div>
+        <div class="skills__grid--item" title="Bootstrap">
+          <img src="img/img-bootstrap.png" alt="bootstrap image" class="img" />
+        </div>
+        <div class="skills__grid--item" title="Sass">
+          <img src="img/img-sass.svg.png" alt="sass image" class="img" />
+        </div>
+        <div class="skills__grid--item" title="Figma">
+          <img src="img/img-figma.png" alt="figma image" class="img" />
+        </div>
+        <div class="skills__grid--item" title="Angular">
+          <img src="img/img-angular.png" alt="angular image" class="img" />
+        </div>
+      </div>
+    </section>
+    <section class="projects" id="projects">
+      <h2>Projects</h2>
+      <div class="projects__cards">
+        <div class="projects__cards--card">
+          <img
+            src="img/poster-grid.png"
+            alt="project image"
+            class="projects__cards--card--image"
+          />
+          <h3>Grid-Layout Page</h3>
+          <p>Technology used:</p>
+          <img
+            src="img/img-html5.png"
+            alt="html5 image"
+            class="img-technology"
+          />
+          <img src="img/img-css.png" alt="css image" class="img-technology" />
+          <a href="projects/grid-layout-project/grid.html" target="_blank"
+            ><button class="projects__cards--card--button">Demo</button>
+          </a>
+          <a
+            href="https://github.com/DeveloperDragos/SIIT-Homework-gr.32-TomaDragos/tree/main/Homework-Grid-Layout-TomaDragos"
+            target="_blank"
+            ><button class="projects__cards--card--button">Code</button></a
+          >
+        </div>
+        <div class="projects__cards--card">
+          <img
+            src="img/poster-rps.png"
+            alt="project image"
+            class="projects__cards--card--image"
+          />
+          <h3>RPS Game</h3>
+          <p>Technology used:</p>
+          <img
+            src="img/img-html5.png"
+            alt="html5 image"
+            class="img-technology"
+          />
+          <img src="img/img-css.png" alt="css image" class="img-technology" />
+          <img
+            src="img/img-javascript.png"
+            alt="javascript image"
+            class="img-technology"
+          />
+          <a
+            href="projects/rock-paper-scissors-game-project/index.html"
+            target="_blank"
+            ><button class="projects__cards--card--button">Demo</button>
+          </a>
+          <a
+            href="https://github.com/DeveloperDragos/SIIT-Homework-gr.32-TomaDragos/tree/main/Homework-Grid-Layout-TomaDragos"
+            target="_blank"
+            ><button class="projects__cards--card--button">Code</button></a
+          >
+        </div>
+        <div class="projects__cards--card">
+          <img
+            src="img/poster-contactus.png"
+            alt="project image"
+            class="projects__cards--card--image"
+          />
+          <h3>Contact Us form</h3>
+          <p>Technology used:</p>
+          <img
+            src="img/img-html5.png"
+            alt="html5 image"
+            class="img-technology"
+          />
+          <img src="img/img-css.png" alt="css image" class="img-technology" />
+          <a href="projects/contactus-form-project/index.html" target="_blank"
+            ><button class="projects__cards--card--button">Demo</button>
+          </a>
+          <a
+            href="https://github.com/DeveloperDragos/SIIT-Homework-gr.32-TomaDragos/tree/main/Homework-Grid-Layout-TomaDragos"
+            target="_blank"
+            ><button class="projects__cards--card--button">Code</button></a
+          >
+        </div>
+        <div class="projects__cards--card">
+          <img
+            src="img/poster-responsive.png"
+            alt="project image"
+            class="projects__cards--card--image"
+          />
+          <h3>Responsive Design</h3>
+          <p>Technology used:</p>
+          <img
+            src="img/img-html5.png"
+            alt="html5 image"
+            class="img-technology"
+          />
+          <img src="img/img-css.png" alt="css image" class="img-technology" />
+          <a
+            href="projects/responsive-web-design-project/card.html"
+            target="_blank"
+            ><button class="projects__cards--card--button">Demo</button>
+          </a>
+          <a
+            href="https://github.com/DeveloperDragos/SIIT-Homework-gr.32-TomaDragos/tree/main/Homework-Grid-Layout-TomaDragos"
+            target="_blank"
+            ><button class="projects__cards--card--button">Code</button></a
+          >
+        </div>
+      </div>
+    </section>
+    <section class="contact-me" id="contactMe">
+      <div class="contact-me__left-side">
+        <h3>Let's meet!</h3>
+        <a href="https://www.google.com/gmail/about/" target="_blank">
+          <p>
+            <i class="fa-regular fa-envelope"></i>drtomadragosloredan@gmail.com
+          </p>
+        </a>
+        <a href="https://www.linkedin.com/feed/" target="_blank">
+          <p><i class="fa-brands fa-linkedin"></i>LinkedIn</p>
+        </a>
+        <a href="https://github.com/DeveloperDragos" target="_blank">
+          <p><i class="fa-brands fa-github"></i>GitHub</p>
+        </a>
+        <a href="documents/CV Toma Dragos-Loredan.doc" download>
+          <button class="download-button">Download CV</button>
+        </a>
+      </div>
+      <div class="contact-me__right-side">
+        <form name="submit-to-google-sheet">
+          <input
+            type="text"
+            name="First Name"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="Last Name"
+            placeholder="Last Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="johndoe@gmail"
+            required
+          />
+          <textarea
+            rows="6"
+            name="Message"
+            placeholder="what are your interests?"
+          ></textarea>
+          <button type="submit" class="message-button">Send Message</button>
+        </form>
+        <span id="confirmationMessage"></span>
+      </div>
+    </section>
+    <div class="copyright">
+      Copyright &#169; Toma Dragos. Site made with sugar, spice and everything
+      nice 🎈
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbysoFM5tA9JKvIb4d3eGpr-DJLEk37KkkSuI1UE87JiKOpQ6F8XKeac6dy-flAzJ8an/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const confirmationMessage = document.getElementById(
+        "confirmationMessage"
+      );
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            confirmationMessage.innerHTML = "Message sent succesfully!";
+            setTimeout(function () {
+              confirmationMessage.innerHTML = "";
+            }, 10000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>

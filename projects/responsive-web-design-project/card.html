@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import "css/color.css";
+      @import "css/global.css";
+
+      .title {
+        font-size: 2rem;
+      }
+
+      .sub-heading,
+      [class$="paragraph"] {
+        font-size: 1.5rem;
+        color: var(--tertiary-color);
+      }
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .left-container {
+        flex: 1 1 0;
+        padding: 30px 60px 30px 20px;
+        background-color: var(--main-color);
+        color: white;
+      }
+
+      .left-container .secondary-color {
+        color: var(--secondary-color);
+      }
+
+      .left-container .sub-heading {
+        margin-top: 15px;
+        margin-bottom: 60px;
+      }
+
+      .left-container .statistics-data {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+
+      .left-container .statistics-data .margin-bottom-sm {
+        margin-bottom: 4px;
+      }
+
+      .right-container {
+        flex: 1 1 auto;
+        padding: 30px 60px 30px 20px;
+        background-image: linear-gradient(
+            to right,
+            rgba(137, 33, 216, 0.4),
+            rgba(137, 33, 216, 0.4)
+          ),
+          url("images/people-office.jpg");
+        /* i tried vars here but it didn't work :| in scss i would've used $secondary-color:rgb(137, 33, 216);  */
+        background-size: cover;
+      }
+
+      @media only screen and (min-width: 64rem) {
+        .title {
+          font-size: 3rem;
+        }
+
+        .sub-heading {
+          font-size: 2rem;
+        }
+
+        .statistics-data {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-container">
+        <h2 class="title heading">
+          Get <span class="title secondary-color">insights</span> that help your
+          business grow
+        </h2>
+        <p class="sub-heading">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          commodi vel praesentium sint! Similique, neque. Accusamus sed nisi
+          mollitia! Deserunt!
+        </p>
+        <div class="statistics-data">
+          <div>
+            <h3 class="statistics-data--heading margin-bottom-sm">10k +</h3>
+            <p class="satistics-data--paragraph">COMPANIES</p>
+          </div>
+          <div>
+            <h3 class="statistics-data--heading margin-bottom-sm">314</h3>
+            <p class="satistics-data--paragraph">TEMPLATES</p>
+          </div>
+          <div>
+            <h3 class="statistics-data--heading margin-bottom-sm">12M +</h3>
+            <p class="satistics-data--paragraph">QUERIES</p>
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="layer"></div>
+      </div>
+    </div>
+  </body>
+</html>
